@@ -7,4 +7,10 @@ services:
       - ./project:/project
     environment: 
       - PROJECT_NAME=TemplateDockerProject
-    command: "/project/generate.sh"
+    command: 
+      - mvn
+      - clean
+      - compile
+      - exec:java
+      - -Dexec.mainClass="template.docker.project.App"
+

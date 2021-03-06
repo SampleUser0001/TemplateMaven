@@ -2,8 +2,8 @@ FROM maven:3.6.3-openjdk-11
 
 WORKDIR /project
 
-COPY project/init.sh /project/init.sh
+COPY project/generate.sh /project/generate.sh
 
-RUN chmod 755 /project/init.sh
+RUN chmod 755 /project/generate.sh
 
-# CMD [ "/project/init.sh" ]
+# CMD [ "/project/generate.sh" ]
