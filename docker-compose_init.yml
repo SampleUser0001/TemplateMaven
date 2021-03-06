@@ -1,0 +1,8 @@
+version: '3'
+services:
+  maven:
+    build: .
+    container_name: TemplateMaven
+    volumes:
+      - ./project:/project
+    command: "/project/init.sh"
