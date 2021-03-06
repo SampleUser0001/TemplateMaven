@@ -5,7 +5,8 @@ Mavenのテンプレート。
 
 1. project/init.shを修正する。
 2. Dockerfileを必要に応じて修正する。
-3. 初回コマンドを実行する。
+3. docker-compose_init.ymlのcontainer_nameを修正する。
+4. 初回コマンドを実行する。
 
 後は適宜ymlを作成して使う。
 
