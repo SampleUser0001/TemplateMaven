@@ -4,4 +4,4 @@ services:
     build: .
     volumes:
       - .:/usr/src/mymaven
-    command: sh mvn_command.sh
+    command: sh clean_compile_exec.sh
