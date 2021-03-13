@@ -3,22 +3,23 @@ Mavenのテンプレート。
 
 ## 使用方法
 
-1. project/init.shを修正する。
+### プロジェクト作成
+
+1. .envを修正する。
+   - PACAGE_NAME、PROJECT_NAMEを修正する。
 2. Dockerfileを必要に応じて修正する。
+   - 取得イメージの修正
 3. docker-compose_init.ymlのcontainer_nameを修正する。
-4. 初回コマンドを実行する。
-5. 作成されたプロジェクトの所有者とグループを変更する。
+4. init.shを実行する。
 
-後は適宜ymlを作成して使う。
+### コンテナ内にコマンドを流す
 
-### 初回コマンド
+```mvn_command.sh```を修正してから下記実行。
 
-``` sh
-docker-compose -f docker-compose_init.yml up
+```
+docker-compose up
 ```
 
-### プロジェクト所有者変更
+## 参考
 
-``` sh
-sudo chown -R ${USER}:${USER} project/*
-```
+- [Docker hub:maven](https://hub.docker.com/_/maven)
