@@ -10,6 +10,7 @@ Mavenのテンプレート。
 2. Dockerfileを必要に応じて修正する。
    - 取得イメージの修正
 3. init.shを実行する。
+   - 最後にログインユーザのパスワードを聞かれるので入力する。(sudo chownで使用する。)
 
 ### clean compile exec:java
 
