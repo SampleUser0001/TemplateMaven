@@ -5,3 +5,5 @@ cd ${PROJECT_NAME}
 
 MVN_COMMAND="clean compile exec:java"
 mvn ${MVN_COMMAND}
+
+chown -R ${HOSTUSER}: .

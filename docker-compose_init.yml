@@ -4,4 +4,10 @@ services:
     build: .
     volumes:
       - .:/usr/src/mymaven
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro
     command: sh generate.sh
+    environment:
+      - USERID=${USERID}
+      - GROUPID=${GROUPID}
+      - HOSTUSER=${HOSTUSER}

@@ -5,3 +5,5 @@ cd ${PROJECT_NAME}
 
 MVN_COMMAND="--version"
 mvn ${MVN_COMMAND}
+
+chown -R ${HOSTUSER}: .
